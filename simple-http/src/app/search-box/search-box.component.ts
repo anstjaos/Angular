@@ -17,6 +17,7 @@ export class SearchBoxComponent implements OnInit {
               private el: ElementRef) { }
 
   ngOnInit(): void {
+    console.log('test');
     const obs = fromEvent(this.el.nativeElement, 'keyup')
       .pipe(
         map((e: any) => e.target.value),
